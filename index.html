@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <title>Luke Hornof - AI Engineering &amp; Leadership</title>
+    <meta name="description" content="AI, Engineering, Leadership." />
+    <meta name="keywords" content="founder, engineer, director, VP, CEO" />    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Leadership</title>
-    <link rel="stylesheet" href="./style-v-1.css">
+    <link rel="stylesheet" type="text/css" href="work/fonts/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="work/css/style-v-1.css">
+    <link rel="shortcut icon" href="work/img/L-icon-tan.ico">
     <style>
         body {
             margin: 0;
@@ -26,21 +29,33 @@
             text-align: left;
             font-family: 'Sentinel A', 'Sentinel B', Garamond, Baskerville, Hoefler Text, serif, 'Times New Roman', Times;
             line-height: 1.6;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: -20px -20px 20px rgba(90,56, 37, 0.4);
             color: #5a3825; /* Dark brown color */
             margin: 20px auto; /* Center the box with equal margins */
         }
 
         .content h1 {
-            font-size: 28px;
+            font-size: 22px;
             font-weight: normal;
             margin-bottom: 10px;
         }
-
+        
         .content h3 {
             font-size: 20px;
             font-weight: normal;
             margin-bottom: 5px;
+        }
+
+        .content .myname {
+            font-size: 20px !important;
+            font-weight: normal;
+            margin: 0 0 !important; /* Add top and bottom margins */
+        }
+
+        .content .mytitle {
+            font-size: 28px !important;
+            font-weight: normal;
+            margin: 20px 0 !important; /* Add top and bottom margins */
         }
 
         .content p {
@@ -51,16 +66,22 @@
         .social-icons {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         .social-icons img {
             width: 20px; /* Adjusted width */
             height: 20px; /* Adjusted height */
-            margin: 0 10px;
+            margin: 0 10px; /* Default spacing for narrow screens */
         }
 
         /* Media queries for responsive design */
+        @media (min-width: 769px) {
+            .social-icons img {
+                margin: 0 20px; /* Increased spacing for wider screens */
+            }
+        }
+
         @media (max-width: 768px) {
             .content {
                 margin: 10px auto; /* Smaller margin for medium screens, centered */
@@ -78,11 +99,10 @@
 </head>
 <body>
     <div class="content">
-        <h3>LUKE HORNOF</h3>
-        <h1>AI Engineering & Leadership</h1>
+        <p class="myname">LUKE HORNOF</p>
+        <p class="mytitle">AI Engineering & Leadership</p>
         <p>Founder, researcher, software engineer.</p>
         <p>Technology enthusiast, AI evangelist.</p>
-        <p>Champion of diversity and merit.</p>
         <p>Build amazing teams, develop innovative products, make customers happy.</p>
         <div class="social-icons">
             <div class="connect-icon">
