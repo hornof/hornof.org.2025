@@ -4,6 +4,16 @@ body {
     height: 100vh;
     background: url('../img/DALL-E Panoramic.webp') no-repeat center center;
     background-size: cover;
+    animation: zoomBackground 20s infinite alternate;
+}
+
+@keyframes zoomBackground {
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 110%;
+    }
 }
 
 .content {
@@ -88,7 +98,12 @@ body {
     }
 
     .social-icons img {
-        margin: 5; /* Remove margins for small screens */
+        margin: 5px; /* Remove margins for small screens */
+    }
+
+    body {
+        background-size: cover;
+        animation: none; /* Disable animation for medium screens */
     }
 }
 
@@ -104,5 +119,10 @@ body {
 
     .social-icons img {
         margin: 5px; /* Remove margins for small screens */
+    }
+
+    body {
+        background-size: cover;
+        animation: none; /* Disable animation for small screens */
     }
 }
