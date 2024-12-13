@@ -88,12 +88,27 @@
                 margin: 10px auto; /* Smaller margin for medium screens, centered */
                 max-width: calc(100% - 20px); /* Ensure the box doesn't shrink too early */
             }
+
+            .social-icons {
+                justify-content: space-between; /* Spread icons to the edges */
+            }
+
+            .social-icons img {
+                margin: 5; /* Remove margins for small screens */
         }
 
         @media (max-width: 480px) {
             .content {
                 margin: 5px auto; /* Even smaller margin for small screens, centered */
                 max-width: calc(100% - 10px); /* Decrease width only when margins are very small */
+            }
+
+            .social-icons {
+                justify-content: space-between; /* Spread icons to the edges */
+            }
+
+            .social-icons img {
+                margin: 5; /* Remove margins for small screens */
             }
         }
     </style>
