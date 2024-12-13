@@ -84,6 +84,7 @@ body {
 
     .social-icons img {
         margin: 5; /* Remove margins for small screens */
+    }
 }
 
 @media (max-width: 480px) {
@@ -97,6 +98,6 @@ body {
     }
 
     .social-icons img {
-        margin: 5; /* Remove margins for small screens */
+        margin: 5px; /* Remove margins for small screens */
     }
 }
