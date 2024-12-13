@@ -28,6 +28,7 @@
             line-height: 1.6;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
             color: #5a3825; /* Dark brown color */
+            margin: 20px auto; /* Center the box with equal margins */
         }
 
         .content h1 {
@@ -49,24 +50,28 @@
 
         .social-icons {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: center;
             margin-top: 20px;
         }
 
-        .social-icons .connect-icon img {
-            width: 32px;
-            height: 32px;
+        .social-icons img {
+            width: 20px; /* Adjusted width */
+            height: 20px; /* Adjusted height */
+            margin: 0 10px;
         }
 
+        /* Media queries for responsive design */
         @media (max-width: 768px) {
             .content {
-                max-width: 90%;
+                margin: 10px auto; /* Smaller margin for medium screens, centered */
+                max-width: calc(100% - 20px); /* Ensure the box doesn't shrink too early */
             }
-            .social-icons {
-                gap: 10px;
-                justify-content: center;
-                flex-wrap: wrap;
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                margin: 5px auto; /* Even smaller margin for small screens, centered */
+                max-width: calc(100% - 10px); /* Decrease width only when margins are very small */
             }
         }
     </style>
@@ -81,25 +86,25 @@
         <p>Build amazing teams, develop innovative products, make customers happy.</p>
         <div class="social-icons">
             <div class="connect-icon">
-                <a href="https://www.linkedin.com/in/lukehornof" title="LinkedIn"><img src="work/img/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="https://www.linkedin.com/in/lukehornof" title="LinkedIn"><img src="work/img/linkedin-icon-brown.png" alt="LinkedIn"></a>
             </div>
             <div class="connect-icon">
-                <a href="https://scholar.google.com/citations?user=Al_FuxQAAAAJ" title="Google Scholar"><img src="work/img/google-scholar-icon.png" alt="Google Scholar"></a>
+                <a href="https://scholar.google.com/citations?user=Al_FuxQAAAAJ" title="Google Scholar"><img src="work/img/google-scholar-icon-brown.png" alt="Google Scholar"></a>
             </div>
             <div class="connect-icon">
-                <a href="https://x.com/hornof/" title="Twitter"><img src="work/img/x-icon.png" alt="Twitter"></a>
+                <a href="https://x.com/hornof/" title="Twitter"><img src="work/img/x-icon-brown.png" alt="Twitter"></a>
             </div>
             <div class="connect-icon">
-                <a href="https://github.com/hornof/" title="GitHub"><img src="work/img/github-icon.png" alt="GitHub"></a>
+                <a href="https://github.com/hornof/" title="GitHub"><img src="work/img/github-icon-brown.png" alt="GitHub"></a>
             </div>
             <div class="connect-icon">
-                <a href="https://facebook.com/lukehornof/" title="Facebook"><img src="work/img/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://facebook.com/lukehornof/" title="Facebook"><img src="work/img/facebook-icon-brown.png" alt="Facebook"></a>
             </div>
             <div class="connect-icon">
-                <a href="https://instagram.com/lukehornof/" title="Instagram"><img src="work/img/instagram-icon.png" alt="Instagram"></a>
+                <a href="https://instagram.com/lukehornof/" title="Instagram"><img src="work/img/instagram-icon-brown.png" alt="Instagram"></a>
             </div>
             <div class="connect-icon">
-                <a href="https://soundcloud.com/luke-hornof" title="Soundcloud"><img src="work/img/soundcloud-circle-icon.png" alt="Soundcloud"></a>
+                <a href="https://soundcloud.com/luke-hornof" title="Soundcloud"><img src="work/img/soundcloud-icon-brown.png" alt="Soundcloud"></a>
             </div>
         </div>
     </div>
