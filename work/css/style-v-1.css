@@ -63,6 +63,11 @@ body {
     width: 20px; /* Adjusted width */
     height: 20px; /* Adjusted height */
     margin: 0 10px; /* Default spacing for narrow screens */
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
 }
 
 /* Media queries for responsive design */
