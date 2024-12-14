@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: url('../img/DALL-E Panoramic.webp') no-repeat center center;
+    background: url('work/img/DALL-E Panoramic.webp') no-repeat center center;
     background-size: cover;
     background-attachment: fixed; /* Ensure the background image stays fixed during scrolling */
     animation: zoomBackground 20s infinite alternate;
