@@ -64,6 +64,11 @@ body {
     margin: 5px 0;
 }
 
+p {
+    text-indent: -1em; /* Negative indent for the first line */
+    padding-left: 1em; /* Indent for the wrapped lines */
+}
+
 .social-icons {
     display: flex;
     justify-content: center;
