@@ -4,6 +4,7 @@ body {
     height: 100vh;
     background: url('../img/DALL-E Panoramic.webp') no-repeat center center;
     background-size: cover;
+    background-attachment: fixed; /* Ensure the background image stays fixed during scrolling */
     animation: zoomBackground 20s infinite alternate;
 }
 
@@ -85,6 +86,10 @@ body {
     .social-icons img {
         margin: 0 20px; /* Increased spacing for wider screens */
     }
+    body {
+        background-size: cover;
+        animation: none; /* Disable animation for medium screens */
+    }
 }
 
 @media (max-width: 768px) {
@@ -125,4 +130,37 @@ body {
         background-size: cover;
         animation: none; /* Disable animation for small screens */
     }
+}
+
+#message-container {
+    position: absolute;
+    bottom: 10%; /* Position near the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Sentinel A', 'Sentinel B', Garamond, Baskerville, Hoefler Text, serif, 'Times New Roman', Times;
+    font-size: 16px; /* Smaller font size */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    animation: typing 3.5s steps(40, end);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: -10px -10px 10px rgba(90, 56, 37, 0.4);
+    color: #5a3825; /* Dark brown color */
+    width: 0; /* Start with width 0 */
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 36ch; } /* Adjust width to match the length of the message */
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
 }
